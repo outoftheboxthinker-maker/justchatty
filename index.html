@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <body style="background:black; color:white; text-align:center;">
-    <h1>IT WORKS 🔥</h1>
-  </body>
+<body style="background:black; color:white; text-align:center;">
+
+<h1>JUSTCHATTTY 💬</h1>
+
+<input id="msg" placeholder="Type message">
+<button onclick="sendMsg()">Send</button>
+
+<ul id="chat"></ul>
+
+<script>
+function sendMsg() {
+  let msg = document.getElementById("msg").value;
+  let li = document.createElement("li");
+  li.innerText = msg;
+  document.getElementById("chat").appendChild(li);
+}
+</script>
+
+</body>
 </html>
